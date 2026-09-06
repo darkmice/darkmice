@@ -1,6 +1,6 @@
 # 一个运行时，九类数据模型
 
-**证据：** Public Code · [Public Release](https://github.com/darkmice/talon-bin/releases/latest) · [MCP 集成](https://github.com/darkmice/talon-mcp)
+**证据：** [Product Site](https://www.talon.net.cn/) · Public Code · [Public Release](https://github.com/darkmice/talon-bin/releases/latest) · [MCP 集成](https://github.com/darkmice/talon-mcp)
 
 [English](./talon-data-engine.md) · [全部案例](./README.zh-CN.md)
 
@@ -46,6 +46,7 @@ SDK / CLI / MCP / HTTP / TCP
 
 ## 公开证据
 
+- [Talon 产品站](https://www.talon.net.cn/)——公开产品定位、引擎概览、下载、文档和快速开始入口。
 - [Talon 二进制与库](https://github.com/darkmice/talon-bin)——公开仓库、快速开始、跨平台发行产物和校验方式。
 - [最新发行版](https://github.com/darkmice/talon-bin/releases/latest)——可下载的服务端与库包。
 - [Talon MCP](https://github.com/darkmice/talon-mcp)——Agent 工具到九类引擎的公开映射。

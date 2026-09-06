@@ -11,6 +11,7 @@
 | **Open Source** | 公开实现，并带有明确的开源许可证。 |
 | **Public Code** | 源码可公开检查，但不暗示授予开源许可。 |
 | **Public Release** | 有版本化产物和 SHA-256；校验值只验证文件完整性，不验证发布者身份。 |
+| **Product Site** | 可公开访问的产品、文档或使用入口；站点宣传不自动等于实现证据。 |
 | **Live Demo** | 可在浏览器操作的假数据实现只用于解释交互，不代表后端或生产行为。 |
 | **Case Study** | 问题定义与工程推理公开；除非另有链接，实现声明仍属于自述。 |
 
@@ -19,8 +20,8 @@
 | 案例 | 工程重点 | 公开材料 |
 |---|---|---|
 | [验收优先的 Agent 交付系统](./talon-pilot.zh-CN.md) | 持久化编排、产品流程、显式验收 | **Case Study** · [浏览器模拟](../demo/) |
-| [一个运行时，九类数据模型](./talon-data-engine.zh-CN.md) | Rust 系统工程、协议面、打包发布 | **Public Code** · **Public Release** |
-| [给 Coding Agent 一台可恢复的电脑](./agent-sandbox.zh-CN.md) | 隔离边界、生命周期、浏览器/PTY/工作区集成 | **Case Study** · [浏览器模拟](../demo/) |
+| [一个运行时，九类数据模型](./talon-data-engine.zh-CN.md) | Rust 系统工程、协议面、打包发布 | **Product Site** · **Public Code** · **Public Release** |
+| [给 Coding Agent 一台可恢复的电脑](./agent-sandbox.zh-CN.md) | 隔离边界、生命周期、浏览器/PTY/工作区集成 | **Product Site** · **Case Study** · [浏览器模拟](../demo/) |
 
 ## 公开边界
 

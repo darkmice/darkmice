@@ -20,7 +20,9 @@
   ·
   <a href="./case-studies/README.md">Case Studies</a>
   ·
-  <a href="https://github.com/talon-org">Talon Org</a>
+  <a href="https://www.talon.net.cn/">Talon</a>
+  ·
+  <a href="https://sandbox.talon.net.cn/">Sandbox</a>
   ·
   <a href="https://formilyjs.org/">Formily</a>
 </p>
@@ -45,6 +47,7 @@ Most production work is private. Each label below describes only the linked publ
 | [**Evidence Lab →**](https://darkmice.github.io/darkmice/demo/) **`Live Demo`** | A browser-only clean-room simulation of task steps, intervention, reconnect behavior, evidence, and a human acceptance gate. |
 | [**Engineering case studies →**](./case-studies/README.md) **`Case Study`** | Three bilingual deep dives covering agent delivery, a multi-model data engine, and a recoverable coding sandbox. |
 | [**Talon releases →**](https://github.com/darkmice/talon-bin/releases/latest) **`Public Release`** | Cross-platform binaries and libraries; SHA-256 checksums verify file integrity, not publisher identity. |
+| [**Talon**](https://www.talon.net.cn/) · [**Talon Sandbox**](https://sandbox.talon.net.cn/) **`Product Site`** | Public product positioning, documentation, download, Playground, and sign-in entry points; not implementation proof. |
 | [**Public repositories →**](https://github.com/darkmice?tab=repositories) **`Public Code`** | Inspectable implementation across data, MCP, structured documents, UI, and quality workflows. |
 
 ### Selected work
@@ -53,7 +56,8 @@ Most production work is private. Each label below describes only the linked publ
 |---|---|---|
 | [**Formily**](https://github.com/alibaba/formily) | Cross-device, high-performance form solution; [verified contributions](https://github.com/alibaba/formily/commits?author=darkmice) | **`Open Source`** |
 | [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | Public product surface for task decomposition, execution visibility, previews, and acceptance; private orchestration is excluded | **`Public Code`** · **`Case Study`** |
-| [**Talon**](https://github.com/darkmice/talon-bin) | SQL · KV · TimeSeries · MQ · Vector · FTS · GEO · Graph · AI in one runtime | **`Public Release`** · **`Case Study`** |
+| [**Talon**](https://www.talon.net.cn/) | SQL · KV · TimeSeries · MQ · Vector · FTS · GEO · Graph · AI in one runtime | **`Product Site`** · **`Public Release`** · **`Case Study`** |
+| [**Talon Sandbox**](https://sandbox.talon.net.cn/) | A recoverable computer boundary for coding agents: workspace, terminal, browser, preview, and policy | **`Product Site`** · **`Case Study`** |
 | [**Talon MCP**](https://github.com/darkmice/talon-mcp) | 38 bounded MCP tools across all nine Talon engines | **`Public Code`** |
 | [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | 30+ semantic components; compact DSL to interactive deliverables | **`Open Source`** · **`Live Demo`** |
 | [**Talon UI**](https://github.com/darkmice/talon-ui) | Design tokens and a 45-component React product system | **`Open Source`** |

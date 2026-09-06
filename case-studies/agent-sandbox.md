@@ -1,6 +1,6 @@
 # A recoverable computer for coding agents
 
-**Evidence:** Case Study · [Clean-room Demo](../demo/)
+**Evidence:** [Product Site](https://sandbox.talon.net.cn/) · Case Study · [Clean-room Demo](../demo/)
 
 [简体中文](./agent-sandbox.zh-CN.md) · [All cases](./README.md)
 
@@ -53,6 +53,8 @@ Public readers cannot independently verify this inventory, so it is not presente
 gVisor and Firecracker are stronger-isolation directions, not current public capabilities. Multi-node high availability and safe execution of arbitrary hostile code are also outside the claim.
 
 ## What can be verified publicly
+
+The [Talon Sandbox product site](https://sandbox.talon.net.cn/) publicly exposes the product positioning plus documentation, Playground, and sign-in entry points. Site copy is not treated as independent implementation proof.
 
 The [Evidence Lab](../demo/) uses synthetic data to demonstrate lifecycle, policy, worker-loss, retry, evidence, and acceptance behavior. It copies no private source and does not pretend to be the production sandbox.
 

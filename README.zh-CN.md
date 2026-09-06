@@ -20,7 +20,9 @@
   ·
   <a href="./case-studies/README.zh-CN.md">工程案例</a>
   ·
-  <a href="https://github.com/talon-org">Talon 组织</a>
+  <a href="https://www.talon.net.cn/">Talon</a>
+  ·
+  <a href="https://sandbox.talon.net.cn/">Sandbox</a>
   ·
   <a href="https://formilyjs.org/">Formily</a>
 </p>
@@ -45,6 +47,7 @@
 | [**Evidence Lab →**](https://darkmice.github.io/darkmice/demo/) **`Live Demo`** | 仅在浏览器内运行的 clean-room 模拟：任务步骤、人工干预、模拟重连、证据和最终验收门。 |
 | [**工程案例 →**](./case-studies/README.zh-CN.md) **`Case Study`** | 三篇中英文案例，分别展示 Agent 交付、多模型数据引擎和可恢复 Coding Sandbox。 |
 | [**Talon 发行版 →**](https://github.com/darkmice/talon-bin/releases/latest) **`Public Release`** | 跨平台二进制与库；SHA-256 只验证文件完整性，不验证发布者身份。 |
+| [**Talon**](https://www.talon.net.cn/) · [**Talon Sandbox**](https://sandbox.talon.net.cn/) **`Product Site`** | 可公开访问的产品定位、文档、下载、Playground 和登录入口；不作为实现证据。 |
 | [**公开仓库 →**](https://github.com/darkmice?tab=repositories) **`Public Code`** | 数据、MCP、结构化文档、UI 和质量工作流的可检查实现。 |
 
 ### 代表项目
@@ -53,7 +56,8 @@
 |---|---|---|
 | [**Formily**](https://github.com/alibaba/formily) | 跨端高性能表单方案；[贡献记录可核验](https://github.com/alibaba/formily/commits?author=darkmice) | **`Open Source`** |
 | [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | 任务拆解、执行可见性、预览和验收的公开产品界面；不含私有编排实现 | **`Public Code`** · **`Case Study`** |
-| [**Talon**](https://github.com/darkmice/talon-bin) | SQL · KV · 时序 · MQ · 向量 · 全文 · GEO · 图 · AI 的统一运行时 | **`Public Release`** · **`Case Study`** |
+| [**Talon**](https://www.talon.net.cn/) | SQL · KV · 时序 · MQ · 向量 · 全文 · GEO · 图 · AI 的统一运行时 | **`Product Site`** · **`Public Release`** · **`Case Study`** |
+| [**Talon Sandbox**](https://sandbox.talon.net.cn/) | 面向 Coding Agent 的可恢复计算机边界：工作区、终端、浏览器、预览与策略 | **`Product Site`** · **`Case Study`** |
 | [**Talon MCP**](https://github.com/darkmice/talon-mcp) | 覆盖 Talon 九类引擎的 38 个有边界 MCP 工具 | **`Public Code`** |
 | [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | 30+ 语义组件，用紧凑 DSL 生成交互交付物 | **`Open Source`** · **`Live Demo`** |
 | [**Talon UI**](https://github.com/darkmice/talon-ui) | 设计令牌与包含 45 个组件的 React 产品系统 | **`Open Source`** |

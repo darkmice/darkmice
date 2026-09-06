@@ -1,6 +1,6 @@
 # One runtime, nine data models
 
-**Evidence:** Public Code · [Public Release](https://github.com/darkmice/talon-bin/releases/latest) · [MCP integration](https://github.com/darkmice/talon-mcp)
+**Evidence:** [Product Site](https://www.talon.net.cn/) · Public Code · [Public Release](https://github.com/darkmice/talon-bin/releases/latest) · [MCP integration](https://github.com/darkmice/talon-mcp)
 
 [简体中文](./talon-data-engine.zh-CN.md) · [All cases](./README.md)
 
@@ -46,6 +46,7 @@ The distribution and MCP surfaces below are publicly inspectable. AI/LLM/Agent i
 
 ## Public evidence
 
+- [Talon product site](https://www.talon.net.cn/) — public product positioning, engine overview, download, documentation, and quick-start entry points.
 - [Talon binaries and libraries](https://github.com/darkmice/talon-bin) — public repository, quick starts, cross-platform release artifacts, and checksum verification.
 - [Latest release](https://github.com/darkmice/talon-bin/releases/latest) — downloadable server/library bundles.
 - [Talon MCP](https://github.com/darkmice/talon-mcp) — public mapping from agent tools to all nine engines.

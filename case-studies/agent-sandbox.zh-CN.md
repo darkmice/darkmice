@@ -1,6 +1,6 @@
 # 给 Coding Agent 一台可恢复的电脑
 
-**证据：** Case Study · [Clean-room Demo](../demo/)
+**证据：** [Product Site](https://sandbox.talon.net.cn/) · Case Study · [Clean-room Demo](../demo/)
 
 [English](./agent-sandbox.md) · [全部案例](./README.zh-CN.md)
 
@@ -53,6 +53,8 @@ Worker：进程监管 · PTY · 浏览器 · 预览
 gVisor 和 Firecracker 是更强隔离的演进方向，不是当前公开能力。多节点高可用，以及安全执行任意恶意代码，也不在本案例的声明范围内。
 
 ## 读者可以公开核验什么
+
+[Talon Sandbox 产品站](https://sandbox.talon.net.cn/)公开展示产品定位，并提供文档、Playground 和登录入口。站点文案不被视为独立实现证据。
 
 [Evidence Lab](../demo/)用假数据演示生命周期、策略、Worker 丢失、重试、证据和验收行为。它不复制任何私有源码，也不冒充生产沙箱。
 
