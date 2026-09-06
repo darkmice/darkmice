@@ -3,6 +3,12 @@
 </p>
 
 <p align="center">
+  <strong>English</strong>
+  ·
+  <a href="https://github.com/darkmice/darkmice/blob/main/README.zh-CN.md">简体中文</a>
+</p>
+
+<p align="center">
   <strong>把 AI 能力做成可运行、可交付、可验证的系统。</strong><br />
   <sub>I turn AI capabilities into systems that can run, ship, and earn trust.</sub>
 </p>
