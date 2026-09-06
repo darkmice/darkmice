@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clean-room, synthetic demo of durable agent execution and evidence-based acceptance.">
+  <title>Evidence Lab — Agent Delivery Demo</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23d8ff3e'/%3E%3Cpath d='M8 9h7c6 0 9 3 9 7s-3 7-9 7H8zm5 4v6h2c3 0 4-1 4-3s-1-3-4-3z' fill='%230b0d0c'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#cockpit">跳到执行面板</a>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="../">
+      <span class="brand-mark">D/</span>
+      <span>Evidence Lab</span>
+    </a>
+    <div class="topbar-meta">
+      <span class="pulse"><i></i> CLEAN-ROOM DEMO</span>
+      <a href="../case-studies/README.zh-CN.md">案例 / Cases</a>
+      <a href="https://github.com/darkmice">GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AGENT DELIVERY STATE MACHINE · SYNTHETIC DATA</p>
+        <h1>Agent 说“完成”之后，<br><em>证据才刚开始。</em></h1>
+      </div>
+      <div class="hero-copy">
+        <p>一个可操作的执行台：派工、依赖、失败恢复、人工约束、验证证据和最终验收。</p>
+        <p class="disclosure">独立 clean-room 实现。全部项目名、文件、日志与指标均为假数据；不包含私有源码或生产信息。</p>
+      </div>
+    </section>
+
+    <section class="scenario-strip" aria-label="选择演示场景">
+      <span class="strip-label">MISSION</span>
+      <button type="button" class="scenario active" data-scenario="release"><b>01</b><span>修复结账回归<small>Checkout regression</small></span></button>
+      <button type="button" class="scenario" data-scenario="feature"><b>02</b><span>交付审计导出<small>Audit export</small></span></button>
+      <button type="button" class="scenario" data-scenario="incident"><b>03</b><span>恢复预览服务<small>Preview recovery</small></span></button>
+    </section>
+
+    <section class="cockpit" id="cockpit">
+      <div class="mission-panel panel">
+        <div class="panel-heading">
+          <span>MISSION CONTRACT</span>
+          <span id="mission-id">M-1042</span>
+        </div>
+        <h2 id="mission-title">修复折扣码导致的结账金额回归</h2>
+        <p id="mission-goal">保留现有税费逻辑；总金额必须确定性计算，重复提交不得产生二次扣款。</p>
+
+        <div class="contract-grid">
+          <div><span>RISK</span><strong id="risk-level" class="tone-warn">HIGH</strong></div>
+          <div><span>NETWORK</span><strong id="network-policy">RESTRICTED</strong></div>
+          <div><span>OWNER</span><strong>HUMAN</strong></div>
+          <div><span>STATE</span><strong id="mission-state" class="tone-idle">READY</strong></div>
+        </div>
+
+        <div class="constraint-box">
+          <span>ACTIVE CONSTRAINTS</span>
+          <div id="constraints" class="chips"></div>
+        </div>
+
+        <div class="controls" role="group" aria-label="执行控制">
+          <button type="button" id="run" class="primary">▶ 运行任务</button>
+          <button type="button" id="pause">Ⅱ 暂停</button>
+          <button type="button" id="constraint">＋ 注入约束</button>
+          <button type="button" id="disconnect">⌁ 模拟断联</button>
+          <button type="button" id="reset" class="quiet">↺ 重置</button>
+        </div>
+      </div>
+
+      <div class="pipeline-panel panel">
+        <div class="panel-heading">
+          <span>SIMULATED PLAN</span>
+          <span id="plan-counter">0 / 5</span>
+        </div>
+        <ol class="pipeline" id="pipeline">
+          <li data-phase="intake"><i>01</i><div><b>约束建模</b><small>Contract intake</small></div><span>QUEUED</span></li>
+          <li data-phase="plan"><i>02</i><div><b>生成执行计划</b><small>Dependency plan</small></div><span>QUEUED</span></li>
+          <li data-phase="implement"><i>03</i><div><b>隔离工作区实现</b><small>Workspace change</small></div><span>QUEUED</span></li>
+          <li data-phase="verify"><i>04</i><div><b>独立验证</b><small>Evidence gate</small></div><span>QUEUED</span></li>
+          <li data-phase="package"><i>05</i><div><b>打包交付</b><small>Delivery bundle</small></div><span>QUEUED</span></li>
+        </ol>
+      </div>
+
+      <div class="stream-panel panel">
+        <div class="panel-heading">
+          <span>EVENT STREAM</span>
+          <span id="lease">LEASE —</span>
+        </div>
+        <div class="terminal" id="terminal" role="log" aria-live="polite"></div>
+      </div>
+
+      <div class="evidence-panel panel">
+        <div class="panel-heading">
+          <span>EVIDENCE BUNDLE</span>
+          <span id="evidence-count">0 / 4</span>
+        </div>
+        <ul class="evidence-list" id="evidence-list">
+          <li data-evidence="change"><i></i><span>最小变更集<small>Bounded diff</small></span><b>PENDING</b></li>
+          <li data-evidence="tests"><i></i><span>回归与反例<small>Positive + negative tests</small></span><b>PENDING</b></li>
+          <li data-evidence="artifact"><i></i><span>可检查产物<small>Inspectable artifact</small></span><b>PENDING</b></li>
+          <li data-evidence="audit"><i></i><span>完整事件链<small>Append-only trail</small></span><b>PENDING</b></li>
+        </ul>
+
+        <div class="file-diff">
+          <span>WORKSPACE / SYNTHETIC</span>
+          <ul id="files"><li class="empty">等待 Agent 产出…</li></ul>
+        </div>
+      </div>
+
+      <div class="verdict-panel panel">
+        <div class="verdict-copy">
+          <span class="kicker">HUMAN GATE</span>
+          <h3 id="verdict-title">尚未具备验收条件</h3>
+          <p id="verdict-detail">必须先完成全部阶段，并收集 4/4 项证据。</p>
+        </div>
+        <div class="score-wrap">
+          <span>CONFIDENCE</span>
+          <strong id="score">—</strong>
+        </div>
+        <div class="verdict-actions">
+          <button type="button" id="reject" disabled>驳回并附原因</button>
+          <button type="button" id="accept" class="primary" disabled>接受交付</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="explain">
+      <p class="eyebrow">WHAT THIS DEMO ILLUSTRATES</p>
+      <div class="explain-grid">
+        <article><b>01</b><h3>前端状态机可操作</h3><p>本页在浏览器内演示暂停、模拟断联、重试与可见事件；不验证服务端持久化。</p></article>
+        <article><b>02</b><h3>失败路径可解释</h3><p>模拟验证失败会保留旧事件并继续修复，用于展示失败状态的产品表达。</p></article>
+        <article><b>03</b><h3>验收权属于人</h3><p>交互明确区分“Agent 已提交”和“人已接受”，但不冒充生产审批系统。</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>A browser-only synthetic interaction demo, not proof of a production backend or sandbox runtime.</span>
+    <span>NO PRIVATE CODE · NO PRODUCTION DATA · NO BACKEND</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

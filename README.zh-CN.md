@@ -16,6 +16,10 @@
 <p align="center">
   <a href="https://github.com/darkmice?tab=repositories">项目</a>
   ·
+  <a href="https://darkmice.github.io/darkmice/demo/">在线 Demo</a>
+  ·
+  <a href="./case-studies/README.zh-CN.md">工程案例</a>
+  ·
   <a href="https://github.com/talon-org">Talon 组织</a>
   ·
   <a href="https://formilyjs.org/">Formily</a>
@@ -32,17 +36,28 @@
 | **03** | **开发者产品** | 从产品定义和交互设计，到 SDK、组件系统、桌面客户端、文档、打包与发布流程。 |
 | **04** | **质量系统** | 以证据为基础的工程方法：对抗审查、明确风险边界、失败路径测试和可核验验收。 |
 
+### 公开证据与披露边界
+
+我的主要生产项目大多是私有仓库。下列标签只描述链接指向的公开材料，不代表读者可以独立核验私有生产实现。
+
+| 证据 | 你可以检查什么 |
+|---|---|
+| [**Evidence Lab →**](https://darkmice.github.io/darkmice/demo/) **`Live Demo`** | 仅在浏览器内运行的 clean-room 模拟：任务步骤、人工干预、模拟重连、证据和最终验收门。 |
+| [**工程案例 →**](./case-studies/README.zh-CN.md) **`Case Study`** | 三篇中英文案例，分别展示 Agent 交付、多模型数据引擎和可恢复 Coding Sandbox。 |
+| [**Talon 发行版 →**](https://github.com/darkmice/talon-bin/releases/latest) **`Public Release`** | 跨平台二进制与库；SHA-256 只验证文件完整性，不验证发布者身份。 |
+| [**公开仓库 →**](https://github.com/darkmice?tab=repositories) **`Public Code`** | 数据、MCP、结构化文档、UI 和质量工作流的可检查实现。 |
+
 ### 代表项目
 
-| 项目 | 核心方向 | 它说明了什么 |
+| 项目 | 核心方向 | 证据类型 |
 |---|---|---|
-| [**Formily**](https://github.com/alibaba/formily) | 面向 React、React Native、Vue 2 和 Vue 3 的跨端高性能表单方案 | 参与具有广泛使用基础的开源表单生态建设 |
-| [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | 跨平台 AI 数字员工指挥台 | 将任务拆解、Agent 执行、产物预览和验收组织成一个产品流程 |
-| [**Talon**](https://github.com/darkmice/talon-bin) | 单二进制、零外部依赖的多模型数据引擎 | SQL · KV · 时序 · MQ · 向量 · 全文检索 · GEO · 图 · AI |
-| [**Talon MCP**](https://github.com/darkmice/talon-mcp) | Talon 的 Model Context Protocol 服务 | 让兼容 MCP 的 Agent 直接使用九类数据引擎 |
-| [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | 面向 Agent 的结构化文档运行时 | 30+ 语义组件，用紧凑 DSL 生成带主题和交互能力的交付文档 |
-| [**Talon UI**](https://github.com/darkmice/talon-ui) | 设计令牌与 React 组件库 | 一套包含 45 个组件、以 Ant Design 能力对齐为目标的产品系统 |
-| [**Dark Tribunal**](https://github.com/darkmice/dark-team-review) | 面向编码 Agent 的风险分级对抗审查 | 用真实证据连接实现、反向审查、QA 与体验验收 |
+| [**Formily**](https://github.com/alibaba/formily) | 跨端高性能表单方案；[贡献记录可核验](https://github.com/alibaba/formily/commits?author=darkmice) | **`Open Source`** |
+| [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | 任务拆解、执行可见性、预览和验收的公开产品界面；不含私有编排实现 | **`Public Code`** · **`Case Study`** |
+| [**Talon**](https://github.com/darkmice/talon-bin) | SQL · KV · 时序 · MQ · 向量 · 全文 · GEO · 图 · AI 的统一运行时 | **`Public Release`** · **`Case Study`** |
+| [**Talon MCP**](https://github.com/darkmice/talon-mcp) | 覆盖 Talon 九类引擎的 38 个有边界 MCP 工具 | **`Public Code`** |
+| [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | 30+ 语义组件，用紧凑 DSL 生成交互交付物 | **`Open Source`** · **`Live Demo`** |
+| [**Talon UI**](https://github.com/darkmice/talon-ui) | 设计令牌与包含 45 个组件的 React 产品系统 | **`Open Source`** |
+| [**Dark Tribunal**](https://github.com/darkmice/dark-team-review) | 将风险分级对抗审查连接到实现与验收证据 | **`Public Code`** |
 
 ### 我的工作方法
 

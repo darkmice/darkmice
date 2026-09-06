@@ -16,6 +16,10 @@
 <p align="center">
   <a href="https://github.com/darkmice?tab=repositories">Projects</a>
   ·
+  <a href="https://darkmice.github.io/darkmice/demo/">Live Demo</a>
+  ·
+  <a href="./case-studies/README.md">Case Studies</a>
+  ·
   <a href="https://github.com/talon-org">Talon Org</a>
   ·
   <a href="https://formilyjs.org/">Formily</a>
@@ -32,17 +36,28 @@
 | **03** | **Developer products** | From product definition and interaction design to SDKs, component systems, desktop clients, docs, packaging, and release workflows. |
 | **04** | **Quality systems** | Evidence-first engineering: adversarial review, explicit risk boundaries, failure-path testing, and verifiable acceptance. |
 
+### Public evidence and disclosure boundaries
+
+Most production work is private. Each label below describes only the linked public artifact; it does not make private production implementation independently verifiable.
+
+| Evidence | What you can inspect |
+|---|---|
+| [**Evidence Lab →**](https://darkmice.github.io/darkmice/demo/) **`Live Demo`** | A browser-only clean-room simulation of task steps, intervention, reconnect behavior, evidence, and a human acceptance gate. |
+| [**Engineering case studies →**](./case-studies/README.md) **`Case Study`** | Three bilingual deep dives covering agent delivery, a multi-model data engine, and a recoverable coding sandbox. |
+| [**Talon releases →**](https://github.com/darkmice/talon-bin/releases/latest) **`Public Release`** | Cross-platform binaries and libraries; SHA-256 checksums verify file integrity, not publisher identity. |
+| [**Public repositories →**](https://github.com/darkmice?tab=repositories) **`Public Code`** | Inspectable implementation across data, MCP, structured documents, UI, and quality workflows. |
+
 ### Selected work
 
-| Project | Focus | Signal |
+| Project | Focus | Evidence |
 |---|---|---|
-| [**Formily**](https://github.com/alibaba/formily) | Cross-device, high-performance form solution for React, React Native, Vue 2, and Vue 3 | Contributor to a widely adopted open-source form ecosystem |
-| [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | Cross-platform command center for AI digital employees | Turns task decomposition, agent execution, previews, and acceptance into one product flow |
-| [**Talon**](https://github.com/darkmice/talon-bin) | Single-binary, zero-external-dependency multi-model data engine | SQL · KV · TimeSeries · MQ · Vector · FTS · GEO · Graph · AI |
-| [**Talon MCP**](https://github.com/darkmice/talon-mcp) | Model Context Protocol server for Talon | Gives MCP-compatible agents direct access to all nine data engines |
-| [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | Agent-native structured document runtime | 30+ semantic components; compact DSL to themed, interactive deliverables |
-| [**Talon UI**](https://github.com/darkmice/talon-ui) | Design tokens and React component library | A 45-component product system with Ant Design parity targets |
-| [**Dark Tribunal**](https://github.com/darkmice/dark-team-review) | Risk-driven adversarial review for coding agents | Connects implementation, counter-review, QA, and UX acceptance to real evidence |
+| [**Formily**](https://github.com/alibaba/formily) | Cross-device, high-performance form solution; [verified contributions](https://github.com/alibaba/formily/commits?author=darkmice) | **`Open Source`** |
+| [**Talon Pilot Studio**](https://github.com/darkmice/talon-pilot-studio) | Public product surface for task decomposition, execution visibility, previews, and acceptance; private orchestration is excluded | **`Public Code`** · **`Case Study`** |
+| [**Talon**](https://github.com/darkmice/talon-bin) | SQL · KV · TimeSeries · MQ · Vector · FTS · GEO · Graph · AI in one runtime | **`Public Release`** · **`Case Study`** |
+| [**Talon MCP**](https://github.com/darkmice/talon-mcp) | 38 bounded MCP tools across all nine Talon engines | **`Public Code`** |
+| [**Talon Doc Runtime**](https://github.com/darkmice/talon-doc-runtime) | 30+ semantic components; compact DSL to interactive deliverables | **`Open Source`** · **`Live Demo`** |
+| [**Talon UI**](https://github.com/darkmice/talon-ui) | Design tokens and a 45-component React product system | **`Open Source`** |
+| [**Dark Tribunal**](https://github.com/darkmice/dark-team-review) | Risk-driven adversarial review connected to implementation and acceptance evidence | **`Public Code`** |
 
 ### My working model
 
